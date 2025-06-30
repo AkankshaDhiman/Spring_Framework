@@ -3,11 +3,12 @@ package com.example;
 public class Student {
     private int age;
     private String name;
-
-//    public Student(int age, String name) {
-//        this.age = age;
-//        this.name = name;
-//    }
+    private  Laptop laptop;
+    public Student(int age, String name, Laptop laptop) {
+        this.age = age;
+    this.name = name;
+    this.laptop = laptop;
+   }
     public Student() {
         System.out.println("Student default Constructor");
     }

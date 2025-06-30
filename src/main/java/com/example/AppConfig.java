@@ -13,4 +13,9 @@ public class AppConfig {
         student.setName("elon");
         return student;
     }
+    public Laptop laptop() {
+        Laptop laptop = new Laptop();
+        laptop.setmodel("mac");
+        return laptop;
+    }
 }
