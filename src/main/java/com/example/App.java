@@ -14,10 +14,12 @@ public class App
 
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-        Student student = context.getBean( "student" , Student.class);
+        Student student1 = context.getBean( "student1" , Student.class);
+        Student student2 = context.getBean( "student2" , Student.class);
         Laptop laptop = context.getBean( "laptop" , Laptop.class);
-        System.out.println(student.getAge());
-        System.out.println(laptop.getModel());
+        System.out.println(student1.getAge());
+        System.out.println(laptop.getmodel());
+        System.out.println(student1==student2);
 
 
     }

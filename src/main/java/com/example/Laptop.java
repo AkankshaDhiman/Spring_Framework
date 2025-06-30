@@ -6,8 +6,10 @@ public class Laptop {
     public Laptop( String model ) {
         this.model = model;
     }
-
-    public String qetmodel() {
+    public Laptop() {
+        System.out.println("default constructor");
+    }
+    public String getmodel() {
         return model;
     }
 
